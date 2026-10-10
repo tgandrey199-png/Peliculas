@@ -1,0 +1,65 @@
+Sistema de Gestión de Series
+
+ ¿De qué trata el proyecto?
+
+Este proyecto es un programa hecho en Java que sirve para llevar un registro de series de televisión. Desde la consola, el usuario puede agregar series, ver cuáles tiene registradas, eliminar alguna, buscarla y modificar su información.
+También cuenta con una opción para calcular el promedio de temporadas de las series registradas y otra para saber cuántas series hay en total.
+La idea de este trabajo es poner en práctica lo aprendido en clase sobre Programación Orientada a Objetos y listas ligadas.
+
+¿Qué se puede hacer en el programa?
+
+El sistema cuenta con las siguientes opciones:
+
+1. **Agregar una serie:** permite registrar una serie con su nombre, género, número de temporadas y año de estreno.
+2. **Mostrar series:** muestra todas las series que se han guardado.
+3. **Eliminar una serie:** permite quitar una serie de la lista escribiendo su nombre.
+4. **Buscar una serie:** sirve para consultar la información de una serie específica.
+5. **Editar una serie:** permite cambiar los datos de una serie que ya está registrada.
+6. **Calcular el promedio de temporadas:** obtiene el promedio de temporadas de todas las series guardadas.
+7. **Contar series:** muestra cuántas series hay registradas.
+8. **Salir:** termina el programa.
+
+Archivos del proyecto
+
+El programa está dividido en cuatro archivos Java, y cada uno tiene una función diferente:
+
+- `Main.java`: contiene el menú principal y permite que el usuario utilice el programa.
+- `Serie.java`: guarda la información de cada serie, como su nombre, género, temporadas y año de estreno.
+- `Nodo.java`: representa cada elemento de la lista ligada y guarda la referencia al siguiente nodo.
+- `ListaSeries.java`: contiene los métodos para agregar, eliminar, mostrar, buscar y modificar las series, además de realizar los cálculos.
+
+## ¿Qué se necesita para ejecutarlo?
+
+Para utilizar el programa es necesario tener instalado Java JDK y contar con un editor de código, como Visual Studio Code.
+
+Los cuatro archivos deben estar dentro de la misma carpeta.
+
+ ¿Cómo ejecutar el programa?
+
+Primero, se abre la carpeta del proyecto en Visual Studio Code. Después, se abre la terminal y se escribe el siguiente comando para compilar los archivos:
+
+javac Serie.java Nodo.java ListaSeries.java Main.java
+
+Cuando termine la compilación, se ejecuta el programa con este comando: java Main
+
+Al iniciar, aparecerá un menú en la consola desde el cual se podrá elegir la operación que se quiera realizar.
+
+## ¿Cómo funciona la lista ligada?
+
+En este proyecto se creó una lista ligada simple desde cero, sin utilizar las listas que ya vienen incluidas en Java.
+Para hacerlo, se utiliza la clase `Nodo`, que guarda una serie y una referencia al siguiente nodo. La clase `ListaSeries` se encarga de conectar estos nodos y recorrerlos para realizar las diferentes operaciones.
+Cuando se agrega una serie, se crea un nuevo nodo y se incorpora a la lista. Para mostrar o buscar información, el programa recorre los nodos hasta llegar al que necesita. Cuando se elimina una serie, se actualizan las referencias para quitar ese nodo de la lista.
+
+## ¿Qué aprendí con este proyecto?
+
+Con este trabajo pude practicar cómo crear clases y objetos en Java, utilizar atributos y métodos, y relacionar diferentes clases dentro de un mismo programa.
+También aprendí cómo funciona una lista ligada y cómo se pueden agregar, eliminar, consultar y modificar objetos sin utilizar una estructura de lista prediseñada de Java.
+Además, el cálculo del promedio de temporadas me permitió practicar cómo recorrer una lista y utilizar los datos almacenados para obtener un resultado.
+
+#Autor
+
+Andrey Edryhu Trujillo González
+
+Teléfono: +52 1 222 608 7350
+Email: tgandrey199@gmail.com
+
